@@ -3,7 +3,7 @@ import pandas as pd
 import urllib.robotparser
 
 # Teste de importação de modulos
-from crawling.recommendations import *
+from recommendations import *
 
 rec1 = Recommendation01('UMMMMMMM')
 rec1.print_name()
@@ -60,4 +60,5 @@ for city in cities:
             cities[city]['sourcecode'] = sourcecode.content
 
 
-print(cities[0]['sourcecode'])
+#print(cities[0]['sourcecode'])
+rec1.Avaliacao(cities[0]['sourcecode'])
